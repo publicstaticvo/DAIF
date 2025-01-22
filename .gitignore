@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+logs
+.ipynb_checkpoints
+__pycache__
+*.log
+*.csv
+*.zip
+ds/results
+un/attn
+data_collect/data
