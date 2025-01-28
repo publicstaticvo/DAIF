@@ -6,12 +6,7 @@ import openai
 import random
 from concurrent.futures import ThreadPoolExecutor as TPE
 
-keys = [
-    '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',
-    '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',
-    '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',
-    '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'
-]
+keys = []
 system = {
     "judge-dialog": "You are an impartial and excellent critic on AI assistant's generated dialog responses. You are shown a conversation between human and AI assistant with two candidate assistant responses. You need to analyze and tell the reason why the first one is better than the second one in three aspects: helpfulness, correctness and harmlessness.",
     "judge-qa": "You are an impartial and excellent critic on the answer for questions. You are shown a question and two answers. You need to analyze and tell the reason why the first one is better than the second one in two aspects: helpfulness, correctness and readability.",
